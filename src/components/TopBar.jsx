@@ -4,12 +4,8 @@ export default function TopBar() {
       <div className="flex items-center gap-3">
         {/* Kiro logo */}
         <a href="https://kiro.dev" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 group">
-          <svg width="28" height="28" viewBox="0 0 32 32" fill="none">
-            <rect width="32" height="32" rx="8" fill="#232F3E"/>
-            <text x="5" y="23" fontFamily="Arial,sans-serif" fontWeight="900" fontSize="18" fill="#FF9900">K</text>
-            <path d="M5 26 Q16 30 27 26" stroke="#FF9900" strokeWidth="2" fill="none" strokeLinecap="round"/>
-          </svg>
-          <span className="text-sm font-bold text-white group-hover:text-[#FF9900] transition-colors">Kiro</span>
+          <img src="https://kiro.dev/icon.svg" alt="Kiro" className="w-7 h-7 rounded-lg" />
+          <img src="https://kiro.dev/images/kiro-wordmark.png" alt="Kiro" className="h-5 hidden sm:block opacity-90 group-hover:opacity-100 transition-opacity" />
         </a>
         <span className="text-white/20">|</span>
         {/* AWS logo */}
