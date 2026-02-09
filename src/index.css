@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@theme {
+  --color-dashboard-bg: #050a14;
+  --color-dashboard-surface: #0f172a;
+  --color-dashboard-card: #1e293b;
+  --color-seahawks-navy: #002244;
+  --color-seahawks-green: #69be28;
+  --color-patriots-navy: #002244;
+  --color-patriots-red: #c60c30;
+  --color-gold-accent: #fbbf24;
+  --color-glass-border: rgba(255,255,255,0.1);
+  --font-oswald: "Oswald", sans-serif;
+  --font-inter: "Inter", sans-serif;
+  --animate-pulse-slow: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+body {
+  background-color: var(--color-dashboard-bg);
+  color: #fff;
+  font-family: var(--font-inter);
+  background-image:
+    radial-gradient(circle at 50% 0, rgba(30,58,138,0.2) 0%, transparent 60%),
+    radial-gradient(circle at 100% 0, rgba(105,190,40,0.1) 0%, transparent 40%),
+    radial-gradient(circle at 0 0, rgba(198,12,48,0.1) 0%, transparent 40%);
+  min-height: 100vh;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.glass-panel {
+  backdrop-filter: blur(16px);
+  border: 1px solid var(--color-glass-border);
+  background: rgba(15,23,42,0.6);
+  box-shadow: 0 4px 30px rgba(0,0,0,0.4);
+}
+
+.card-glass {
+  background: rgba(30,41,59,0.5);
+  border: 1px solid rgba(255,255,255,0.06);
+  backdrop-filter: blur(8px);
+}
+
+.card-gold {
+  background: rgba(30,41,59,0.5);
+  border: 1px solid rgba(251,191,36,0.15);
+}
+
+@keyframes spotlight {
+  0% { opacity: 0.5; transform: translate(-10%) rotate(-5deg); }
+  100% { opacity: 0.8; transform: translate(10%) rotate(5deg); }
+}
