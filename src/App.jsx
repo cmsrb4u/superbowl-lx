@@ -19,8 +19,7 @@ import FadeInCard from './components/FadeInCard'
 import TopBar from './components/TopBar'
 
 export default function App() {
-  const [showSplash, setShowSplash] = useState(true)
-  const dismiss = useCallback(() => { setShowSplash(false); window.scrollTo({ top: 0, behavior: 'instant' }) }, [])
+  const [showSplash] = useState(false)
   const { eventId, gameStatus, scores, clock, plays, playerStats, teamStats, winProbability, currentDrive, driveHistory, quarterScores, gameInfo, isLoading, consecutiveErrors } = useGameData()
 
   if (!isLoading && eventId === null) return (
