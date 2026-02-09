@@ -16,6 +16,7 @@ import TeamStats from './components/TeamStats'
 import QuarterScores from './components/QuarterScores'
 import HelmetShowdown from './components/HelmetShowdown'
 import FadeInCard from './components/FadeInCard'
+import TopBar from './components/TopBar'
 
 export default function App() {
   const [showSplash, setShowSplash] = useState(true)
@@ -36,6 +37,7 @@ export default function App() {
     <div className="min-h-screen text-white relative overflow-hidden font-inter selection:bg-gold-accent/30">
       <AnimatePresence>{showSplash && <SplashScreen onComplete={dismiss} />}</AnimatePresence>
       <Background />
+      <TopBar />
 
       <div className="relative z-10 max-w-[1600px] mx-auto px-4 py-6">
         <div className="mb-8">
