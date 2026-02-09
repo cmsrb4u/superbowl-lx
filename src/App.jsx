@@ -5,7 +5,7 @@ import Background from './components/Background'
 import SplashScreen from './components/SplashScreen'
 import Scoreboard from './components/Scoreboard'
 import KeyPlayers from './components/KeyPlayers'
-import GameLeaders from './components/GameLeaders'
+import SuperBowlAds from './components/SuperBowlAds'
 import NewsCarousel from './components/NewsCarousel'
 import CurrentDrive from './components/CurrentDrive'
 import DriveHistory from './components/DriveHistory'
@@ -44,7 +44,7 @@ export default function App() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
           <FadeInCard delay={150}><KeyPlayers playerStats={playerStats} scores={scores} /></FadeInCard>
-          <FadeInCard delay={200}><GameLeaders leaders={gameInfo.leaders} /></FadeInCard>
+          <FadeInCard delay={200}><SuperBowlAds /></FadeInCard>
           <FadeInCard delay={250}><NewsCarousel /></FadeInCard>
         </div>
 
