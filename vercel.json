@@ -1,6 +1,10 @@
 {
-  "deploymentProtection": {
-    "production": "none",
-    "preview": "none"
-  }
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "X-Frame-Options", "value": "ALLOWALL" }
+      ]
+    }
+  ]
 }
